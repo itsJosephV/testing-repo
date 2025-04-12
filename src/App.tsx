@@ -42,6 +42,9 @@ function App() {
       </p>
 
       <div style={{ color: count === 10 ? "red" : "blue" }}>THIS IS A TEST</div>
+      <div style={{ color: count === 10 ? " yellow" : "orange" }}>
+        THIS IS A TEST
+      </div>
       <div style={{ color: count === 20 ? "green" : "violet" }}>
         THIS IS A TEST
       </div>
