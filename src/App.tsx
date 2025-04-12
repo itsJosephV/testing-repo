@@ -1,55 +1,33 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  const cc = "   d";
+
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className="p-5 text-cyan-700 ">
+        <button
+          type="button"
+          className="rounded-md bg-red-200 px-4 py-2 text-red-400 "
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>This is a test</p>
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>This is a test 02</p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-
-      <div style={{ color: count === 10 ? "red" : "blue" }}>THIS IS A TEST</div>
-      <div style={{ color: count === 10 ? " yellow" : "orange" }}>
-        THIS IS A TEST
-      </div>
-      <div style={{ color: count === 20 ? "green" : "violet" }}>
-        THIS IS A TEST
+        <div style={{ color: count === 20 ? "green" : "violet        " }}>
+          THIS IS A TEST
+        </div>
       </div>
     </>
   );
 }
 
 export default App;
+
+const AAA = () => {
+  return <p className="px-2 text-red-700 ">aaa</p>;
+};
